@@ -12,7 +12,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {useState} from 'react';
+import { useState, useEffect } from "react";
 
 
 
@@ -44,9 +44,9 @@ const theme = createTheme({
 export default function App() {
   const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
-
+  //const navigate = useNavigate();
 	async function handleSubmit(event) {
-		//event.preventDefault()
+		event.preventDefault()
 
 		const response = await fetch('http://localhost:1337/api/login', {
 			method: 'POST',
@@ -64,7 +64,8 @@ export default function App() {
 		if (data.user) {
 			localStorage.setItem('token', data.user)
 			alert('Login successful')
-			window.location.href = '/dashboard'
+			//navigate('/Dashboard')
+      
 		} else {
 			alert('Please check your username and password')
 		}
