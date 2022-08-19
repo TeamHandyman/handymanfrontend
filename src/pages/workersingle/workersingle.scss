@@ -1,0 +1,112 @@
+.workerSingle{
+    display: flex;
+    width: 100%; 
+    .workerSingleContainer{
+        flex: 5;
+
+        .top{
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left{
+                padding-top: 210px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+                padding: 20px;
+
+                .item{
+                   
+                    gap: 20px;
+                    // align-items: center;
+                    // justify-content: center;
+                    // text-align: center;
+
+                     .itemImg{
+                        width: 100px;
+                        height: 100px;
+                        margin-top: 20px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .status{
+                        margin-top: 7px;
+                        font-size: 12px;
+                    }
+
+                    .userName{
+                        margin-top: 7px;
+                    }
+
+                    .editButton{
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        // align-items: center;
+                        // justify-content: center;
+                        padding: 10px;
+                       
+                        border-radius: 5px;
+                        background-color: rgba(0, 0, 0, 0.05);
+                        color: rgb(0, 0, 0);
+                        font-size: 12px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    
+
+                        &:hover{
+                            color: #e2b808;
+                        }
+                           
+                    }
+                    
+                    .hrBar{
+                        border-top: 1px solid rgb(75, 75, 75);
+                        margin-top: 10px;
+                        opacity: 25%;
+                        margin-bottom: 10px;
+                    }
+
+                    .detailItem{
+
+                        margin-top: 10px;
+                        align-items: center;
+
+                    .itemKey{
+                        font-size: 14px;
+                        font-weight: bold;
+                        float: left;
+                        text-align: left;
+                        display: flex;
+                        color: rgb(98, 98, 98);
+                        align-items: center;
+
+
+                        .icon{
+                            font-size: 14px;
+                            color: rgb(98, 98, 98);
+                            margin-right: 13px;
+
+                        }
+                    }
+                    .itemValue{
+                        font-size: 14px;
+                        float: right;
+                        text-align: right;
+                     
+                    }
+                  }
+                }
+            }
+
+            .right{
+                flex: 3;
+            }
+        }
+    }
+}
