@@ -8,6 +8,7 @@ import Workers from './pages/workers/Workers';
 import Workersingle from './pages/workersingle/Workersingle';
 
 const App = () => {
+  //const user = localStorage.getItem("token");
 	return (
 		<div>
 
@@ -15,7 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/">
               <Route index element={<Login />} />
-			  <Route path="/Home" element={<Home/>} />
+			        <Route path="/Home" element={<Home/>} />
               <Route path="workers">
                 <Route index element={<Workers />}/>
                 <Route path=":workerId" element={<Workersingle />} />
