@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import {Login, Dashboard} from './pages';
+import {Login} from './pages';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home';
 import Sales from './pages/sales/Sales';
@@ -16,6 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/">
               <Route index element={<Login />} />
+			        <Route path="/Home" element={<Home/>} />
               <Route path="workers">
                 <Route index element={<Workers />}/>
                 <Route path=":workerId" element={<Workersingle />} />
