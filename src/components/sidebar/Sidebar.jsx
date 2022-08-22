@@ -8,6 +8,8 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import weblogo from '../../images/handyman-logo.png'; 
+import { Link } from 'react-router-dom';
+
 
 const Sidebar = () => {
   return (
@@ -20,33 +22,45 @@ const Sidebar = () => {
         <ul><br /> <br />
             {/* <p className="title">Main</p> */}
             <li>
+            <Link to="/home" className="linkStlyes">
             <div className="hover-effect">
                 <GridViewIcon className='icon'/>
-                <span className='menu-links'>Dashboard</span>
+                <span className='menu-links' >Dashboard</span>
             </div>
+            </Link> 
+
             </li>
             <li>
+          
+            <Link to="/workers" className="linkStlyes">
             <div className="hover-effect">
                 <PeopleAltIcon className='icon' />
                 <span className='menu-links'>Workers</span>
             </div>
+            </Link>
             </li>
             <li>
+            <Link to="/clients" className="linkStlyes">
             <div className="hover-effect">
                 <PeopleAltIcon className='icon' />
                 <span className='menu-links'>Clients</span>
             </div>
+            </Link>
             </li>
-       
+
+            <Link to="/ticket" className="linkStlyes">
             <li>
                 <LocalActivityIcon className='icon'/>
                 <span className='menu-links'> Tickets</span>
             </li>
-       
+            </Link>
+            
+            <Link to="/sales" className="linkStlyes">
             <li>
                 <SignalCellularAltIcon className='icon'/>
                 <span className='menu-links'>Sales</span>
             </li>
+            </Link>
            
             {/* <p className="title">Updates</p> */}
             {/* <li>

@@ -10,6 +10,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import WorkIcon from '@mui/icons-material/Work';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 //Tabs
 
 
@@ -36,7 +37,8 @@ const workersingle = () => {
                 </Stack>
                
                 <div className="editButton" >
-                     Edit Profile
+                     Change Status
+                     {/* <ArrowDropDownIcon /> */}
                 </div> 
                 
                 <hr className="hrBar"/>

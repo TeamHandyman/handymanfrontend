@@ -16,13 +16,13 @@ const Navbar = () => {
           <SearchIcon />
         </div>
         <div className="items">
-          <div className="item">
+          {/* <div className="item">
               <LanguageIcon className="icon"/>
               English
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
               <FullscreenExitIcon className="icon"/>
-          </div>
+          </div> */}
           <div className="item">
               <NotificationsNoneOutlinedIcon className="icon"/>
               <div className="counter">1</div>
@@ -31,9 +31,9 @@ const Navbar = () => {
               <ChatBubbleOutlineOutlinedIcon className="icon"/>
               <div className="counter">2</div>
           </div>
-          <div className="item">
+          {/* <div className="item">
               < FormatListBulletedOutlinedIcon className="icon"/>
-          </div>
+          </div> */}
           <div className="item">
               < AccountCircleIcon />
           </div>

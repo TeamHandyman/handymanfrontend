@@ -13,6 +13,7 @@
         align-items: left;
         margin-left: 10px;
         
+        
 
         .logo{
             margin-top: 30px;
@@ -71,12 +72,18 @@
              }
 
              .menu-links{
+                text-decoration: none;
+
                 color:white;
                 margin-left: 10px;
              }
             
             }
         }
+    }
+
+    .linkStlyes{
+        text-decoration: none;
     }
 
 }
