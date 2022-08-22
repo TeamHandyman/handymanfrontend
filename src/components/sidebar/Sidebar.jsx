@@ -28,7 +28,13 @@ const Sidebar = () => {
             <li>
             <div className="hover-effect">
                 <PeopleAltIcon className='icon' />
-                <span className='menu-links'>Users</span>
+                <span className='menu-links'>Workers</span>
+            </div>
+            </li>
+            <li>
+            <div className="hover-effect">
+                <PeopleAltIcon className='icon' />
+                <span className='menu-links'>Clients</span>
             </div>
             </li>
        
@@ -41,11 +47,7 @@ const Sidebar = () => {
                 <SignalCellularAltIcon className='icon'/>
                 <span className='menu-links'>Sales</span>
             </li>
-            <li>
-                {/* <ForumIcon className='icon'/> */}
-                <span className='menu-links'></span>
-            </li>
-
+           
             {/* <p className="title">Updates</p> */}
             {/* <li>
                 <NotificationsNoneIcon className='icon'/>
