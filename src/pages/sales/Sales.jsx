@@ -5,14 +5,15 @@ import Saleswidget from "../../components/saleswidget/Saleswidget"
 import Featured from "../../components/featured/Featured"
 import Saleschart from "../../components/saleschart/Saleschart"
 import Commisionchart from "../../components/commisionchart/Commisionchart"
+
 const Sales = () => {
 
   return (
     <div className="sales">
-    {/* <div className="position">
+    <div className="position">
       <Sidebar />
-    </div> */}
-    <Sidebar />
+    </div>
+    {/* <Sidebar/> */}
         <div className="salesContainer">
         <Navbar />
         <div className="saleswidgets">
