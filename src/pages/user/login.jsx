@@ -3,8 +3,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-
+//import FormControlLabel from '@mui/material/FormControlLabel';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -12,7 +11,9 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useState, useEffect } from "react";
+import { useState} from "react";
+import axios from "axios";
+//import { Link } from "react-router-dom";
 
 
 
@@ -41,35 +42,36 @@ const theme = createTheme({
 }
 );
 
-export default function App() {
-  const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
-  //const navigate = useNavigate();
-	async function handleSubmit(event) {
-		event.preventDefault()
+const Login = () => {
+	const [data, setData] = useState({ email: "", password: "" });
+	const [error, setError] = useState("");
 
-		const response = await fetch('http://localhost:1337/api/login', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				email,
-				password,
-			}),
-		})
 
-		const data = await response.json()
+	const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
 
-		if (data.user) {
-			localStorage.setItem('token', data.user)
-			alert('Login successful')
-			//navigate('/Dashboard')
-      
-		} else {
-			alert('Please check your username and password')
+
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = "http://localhost:1337/api/auth";
+			const { data: res } = await axios.post(url, data);
+			localStorage.setItem("token", res.data);
+
+			window.location = "/";
+
+		} catch (error) {
+			if (
+				error.response &&
+				error.response.status >= 400 &&
+				error.response.status <= 500
+			) {
+				setError(error.response.data.message);
+			}
 		}
-	}
+	};
 
   return (
     <ThemeProvider theme={theme}>
@@ -113,11 +115,12 @@ export default function App() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                value={data.email}
+                label="Email"
                 name="email"
                 autoComplete="email"
                 autoFocus
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleChange}
               />
               <TextField
                 margin="normal"
@@ -126,10 +129,11 @@ export default function App() {
                 fullWidth
                 name="password"
                 label="Password"
+                value={data.password}
                 type="password"
                 id="password"
                 autoComplete="current-password"
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={handleChange}
               />
         
               <Button
@@ -141,17 +145,14 @@ export default function App() {
               >
                 Sign In
               </Button>
+              {/* {error} */}
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2" color= '#000000'>
                     Forgot password?
                   </Link>
                 </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2" color= '#000000'>
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
+                
               </Grid>
               <Copyright sx={{ mt: 5 }} />
             </Box>
@@ -161,3 +162,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
+export default Login;

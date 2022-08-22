@@ -60,7 +60,9 @@ const Sidebar = () => {
                 <SignalCellularAltIcon className='icon'/>
                 <span className='menu-links'>Sales</span>
             </li>
+
             </Link>
+
            
             {/* <p className="title">Updates</p> */}
             {/* <li>

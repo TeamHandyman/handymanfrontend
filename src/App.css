@@ -8,6 +8,7 @@
   background-color: wheat;
   height: 10vh;
   border: white 1px solid;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
