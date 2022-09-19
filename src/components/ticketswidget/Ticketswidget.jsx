@@ -17,7 +17,7 @@ const Ticketwidget = ({type}) => {
     case "workers":
       data={
         title:"NEW TICKETS",
-        isMoney: true,
+        isMoney: false,
         icon: (<EngineeringIcon className="icon"/>)
       };
       break;

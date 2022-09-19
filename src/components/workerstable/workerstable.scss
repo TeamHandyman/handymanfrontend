@@ -15,9 +15,11 @@
         }
     
     }
+    
     .cellWithStatus{
         padding: 5px;
         border-radius: 5px;
+        text-decoration: none;
 
         &.Pending {
             background-color: rgba(255,217,0,0.05);

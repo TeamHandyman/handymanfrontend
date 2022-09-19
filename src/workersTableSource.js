@@ -1,3 +1,7 @@
+// import React from 'react';
+// import {useEffect} from 'react'
+// import axios from "axios";
+
 export const userColumns = [
     {field: "id", headerName: "ID", width: 70},
     {
@@ -41,95 +45,5 @@ export const userColumns = [
 
 //temp data
 export const userRows = [
-    {
-        id:1,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "1sana@gmail.com",
-        category: "plumber",
-        status: "Pending"
-       
-    },
-    {
-        id:2,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "2sana@gmail.com",
-        category: "plumber",
-        status: "Approved"
-       
-    },
-    {
-        id:3,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "3sana@gmail.com",
-        category: "plumber",
-        status: "Approved"
-       
-    },
-    {
-        id:4,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "4sana@gmail.com",
-        category: "plumber",
-        status: "Revision"
-       
-    },
-    {
-        id:5,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "5sana@gmail.com",
-        category: "carpenter",
-        status: "Pending"
-       
-    },
-    {
-        id:6,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "1sana@gmail.com",
-        category: "plumber",
-        status: "Pending"
-       
-    },
-    {
-        id:7,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "2sana@gmail.com",
-        category: "plumber",
-        status: "Approved"
-       
-    },
-    {
-        id:8,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "3sana@gmail.com",
-        category: "plumber",
-        status: "Approved"
-       
-    },
-    {
-        id:9,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "4sana@gmail.com",
-        category: "plumber",
-        status: "Revision"
-       
-    },
-    {
-        id:10,
-        username: "Sanath Perera",
-        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg", 
-        email: "5sana@gmail.com",
-        category: "carpenter",
-        status: "Pending"
-       
-    }
 
 ];

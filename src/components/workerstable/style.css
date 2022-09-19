@@ -1,0 +1,55 @@
+.table, .tb, .th, .td-A, .td-B{
+    
+    border-collapse:collapse ;
+    
+}
+
+.table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    table-layout: fixed;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.th{
+    height: 15%;
+    background-color: goldenrod;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    font-weight: light;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: 1px solid;
+    
+}
+.tbody{
+    margin-bottom: 10em;
+}
+.tb{
+    margin-top: 10px;
+
+}
+.td, .td-A, .td-B{
+    margin-bottom: 10%;
+    background-color: #ffffff;
+    
+   
+}
+
+.tr{
+    margin: 10%;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    justify-content: space-around;
+}
+
+
+
+.td-B{
+    color: crimson;
+}
+
+
