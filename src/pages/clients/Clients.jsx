@@ -1,7 +1,7 @@
 import "./clients.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
-import Workerstable from "../../components/workerstable/Workerstable"
+import Workerstable from "../../components/workerstable/clientTable"
 
 const Clients = () => {
 
