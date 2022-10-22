@@ -8,7 +8,7 @@ import './style.css'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 
-  
+
 const Workerstable = () => {
 
   const [data, setData] = useState([]);
@@ -26,6 +26,8 @@ const Workerstable = () => {
   return (
 
     <div className="workerstable">
+    {/* <div onload="makeTableScroll();">
+    <div className="scrollingTable"> */}
       <table className="table">
           <thead className="th">
               <th>First Name</th>
@@ -50,8 +52,9 @@ const Workerstable = () => {
             </tr>)}
           </tbody>
   </table>
-        
-    </div>
+  </div>
+  // </div>
+  //   </div>
   )
 }
 
