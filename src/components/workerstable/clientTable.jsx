@@ -31,7 +31,6 @@ const Workerstable = () => {
               <th>First Name</th>
               <th>Last Name</th>
               <th>District</th>
-              
               <th>Profile</th>
               
           </thead>
