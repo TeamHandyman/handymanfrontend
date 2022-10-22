@@ -11,11 +11,20 @@ import PersonIcon from '@mui/icons-material/Person';
 import WorkIcon from '@mui/icons-material/Work';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Link, useParams } from "react-router-dom";
+import {useEffect, useState} from 'react'
+import axios from "axios";
 //Tabs
 
 
 
-const workersingle = () => {
+function Workersingle (props) {
+  const {workerId} = useParams();
+  const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   axios.get(`http://localhost:1337/api/workerProfile/id=${userId}`).then((response)=>{setData(response.data)})
+  // }, [userId])
+  //console.log(data)
   return (
     <div className="workerSingle">
       <Sidebar />
@@ -105,5 +114,5 @@ const workersingle = () => {
 }
 
 
-export default workersingle
+export default Workersingle
    
