@@ -1,6 +1,7 @@
 import "./workersingle.scss";
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
+import Statusbtn from "../../components/changestatus/Statusbtn"
 import Ongoing from "../../components/workerprofilecharts/Ongoing"
 import Jobtabs from "../../components/jobtabs/Jobtabs"
 import Rating from '@mui/material/Rating';
@@ -48,6 +49,7 @@ function Workersingle (props) {
                   <Rating name="half-rating" defaultValue={2.5} precision={0.5} style={{justifyContent: "center", marginTop:"7px"}}readOnly />
               </Stack>
              
+
               <div className="editButton" >
                    Change Status
                    {/* <ArrowDropDownIcon /> */}

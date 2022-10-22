@@ -13,12 +13,19 @@
     margin-bottom: 10%;
 }
 
+/* .scrollingTable{
+    width: 70em;
+    overflow-y: auto;
+} */
+
 .th{
-    height: 15%;
-    background-color: goldenrod;
+    height: 5%;
+    background-color: rgb(0, 0, 0);
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #ffffff;
     font-weight: light;
     justify-content: space-between;
@@ -36,9 +43,8 @@
 .td, .td-A, .td-B{
     margin-bottom: 10%;
     background-color: #ffffff;
-    
-   
 }
+
 
 .tr{
     margin: 10%;
