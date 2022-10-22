@@ -7,6 +7,7 @@ import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import WorkIcon from '@mui/icons-material/Work';
 import weblogo from '../../images/handyman-logo.png'; 
 import { Link } from 'react-router-dom';
 
@@ -61,6 +62,13 @@ const Sidebar = () => {
                 <span className='menu-links'>Sales</span>
             </li>
 
+            </Link>
+
+            <Link to="/jobs" className="linkStlyes">
+            <li>
+                <WorkIcon className='icon'/>
+                <span className='menu-links'> Jobs</span>
+            </li>
             </Link>
 
            
