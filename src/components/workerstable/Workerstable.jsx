@@ -39,7 +39,7 @@ const Workerstable = () => {
               <td className="td">{x.lName}</td>
               <td className="td">{x.district}</td>
               <td className="td-B">{x.accountStatus}</td>
-              <Link to={"/workers/" + x._id} className="linkStlyes"> 
+              <Link to={ `/workers/${x._id}`} className="linkStlyes"> 
                    <td className="td-A"><Button variant="outlined" color="secondary" size="small">View</Button></td>
               </Link>
               <td className="td-A"><Button variant="outlined" color="success" size="small">Accept</Button> <Button variant="outlined" size="small" color="error">Reject</Button></td>
