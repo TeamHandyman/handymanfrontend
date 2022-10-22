@@ -8,6 +8,8 @@ import Workers from './pages/workers/Workers';
 import Clients from './pages/clients/Clients';
 import Ticket from './pages/ticket/Ticket'
 import Workersingle from './pages/workersingle/Workersingle';
+import Jobs from './pages/jobs/Jobs'
+import Addjob from './pages/jobs/Addjob';
 
 const App = () => {
   //const user = localStorage.getItem("token");
@@ -33,6 +35,14 @@ const App = () => {
               </Route>
               <Route path="sales">
                 <Route index element={<Sales />}/>
+                {/* <Route path=":workerId" element={<Workersingle />} /> */}
+              </Route>
+              <Route path="jobs">
+                <Route index element={<Jobs />}/>
+                {/* <Route path=":workerId" element={<Workersingle />} /> */}
+              </Route>
+              <Route path="jobs/addjob">
+                <Route index element={<Addjob/>}/>
                 {/* <Route path=":workerId" element={<Workersingle />} /> */}
               </Route>
              </Route>

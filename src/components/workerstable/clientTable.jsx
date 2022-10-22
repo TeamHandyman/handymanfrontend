@@ -1,12 +1,20 @@
 import "./workerstable.scss"
 //import { DataGrid } from '@mui/x-data-grid';
 //import { userRows, userColumns } from "../../workersTableSource";
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+import { Link, useNavigate } from 'react-router-dom';
+>>>>>>> 1bd987b0db682ff8da14d6b93ef17a07307fec1a
 import {useEffect, useState} from 'react'
 import axios from "axios";
 import './style.css'
 import Button from '@mui/material/Button';
+<<<<<<< HEAD
 //import Stack from '@mui/material/Stack';
+=======
+import Stack from '@mui/material/Stack';
+>>>>>>> 1bd987b0db682ff8da14d6b93ef17a07307fec1a
 
   
 const Workerstable = () => {
