@@ -8,6 +8,7 @@ import Workers from './pages/workers/Workers';
 import Clients from './pages/clients/Clients';
 import Ticket from './pages/ticket/Ticket'
 import Workersingle from './pages/workersingle/Workersingle';
+import Clientsingle from './pages/clientsingle/Clientsingle';
 import Jobs from './pages/jobs/Jobs'
 import Addjob from './pages/jobs/Addjob';
 
@@ -24,10 +25,11 @@ const App = () => {
               <Route path="workers">
                 <Route index element={<Workers />}/>
                 <Route path=":workerId" element={<Workersingle />} />
+                <Route path="customer/:clientId" element={<Clientsingle />} />
               </Route>
               <Route path="clients">
                 <Route index element={<Clients />}/>
-                <Route path=":clientId" element={<Workersingle />} />
+                <Route path=":clientId" element={<Clientsingle />} />
               </Route>
               <Route path="ticket">
                 <Route index element={<Ticket />}/>
