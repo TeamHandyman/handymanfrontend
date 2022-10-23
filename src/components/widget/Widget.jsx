@@ -5,10 +5,14 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import GroupIcon from '@mui/icons-material/Group';
 import StackedLineChartOutlinedIcon from '@mui/icons-material/StackedLineChartOutlined';
 import LocalActivityOutlinedIcon from '@mui/icons-material/LocalActivityOutlined';
-
+import { useEffect } from "react";
+import axios from "axios";
 const Widgets = ({type}) => {
   let data;
 
+useEffect(() => {
+  axios.get('http://localhost:1337/api/worker/getCount').then((response)=> {})
+},[])  
   //temp
   const amount = 1000
   const diff = 20 
