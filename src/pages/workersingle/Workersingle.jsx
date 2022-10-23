@@ -1,6 +1,7 @@
 import "./workersingle.scss";
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
+import Statusbtn from "../../components/changestatus/Statusbtn"
 import Ongoing from "../../components/workerprofilecharts/Ongoing"
 import Jobtabs from "../../components/jobtabs/Jobtabs"
 import Rating from '@mui/material/Rating';
@@ -47,7 +48,7 @@ function Workersingle (props) {
               <Stack spacing={1}>
                   <Rating name="half-rating" defaultValue={2.5} precision={0.5} style={{justifyContent: "center", marginTop:"7px"}}readOnly />
               </Stack>
-             
+
               <div className="editButton" >
                    Change Status
                    {/* <ArrowDropDownIcon /> */}
@@ -65,6 +66,7 @@ function Workersingle (props) {
                   <br />
                   
                 </div>
+
 
                 <div className="detailItem">
                   <div className="itemKey"><EmailIcon className="icon"/> Email  </div>
@@ -84,11 +86,33 @@ function Workersingle (props) {
                 <div className="detailItem">
                   <div className="itemKey"> <WorkIcon className="icon"/>Job Type  </div>
                   <div className="itemValue"> {userData.jobType} </div>
+
+                <div className="detailItem">
+                  <div className="itemKey"><EmailIcon className="icon"/> Email  </div>
+                  <div className="itemValue"> {userData.email} </div>
+                  <br />
+                  <br />
+                  
+                </div>
+
+                <div className="detailItem">
+                  <div className="itemKey"><LocalPhoneIcon className="icon"/> Tel </div>
+                  <div className="itemValue"> {userData.phone} </div>
+
                   <br />
                   <br />
                 </div>
 
                 <div className="detailItem">
+
+                  <div className="itemKey"> <WorkIcon className="icon"/>Job Type  </div>
+                  <div className="itemValue"> {userData.jobType} </div>
+                  <br />
+                  <br />
+                </div>
+
+                <div className="detailItem">
+
                   <div className="itemKey"> <PersonIcon className="icon"/> Member Since  </div>
                   <div className="itemValue"> 24/11/2021 </div>
                   <br />
