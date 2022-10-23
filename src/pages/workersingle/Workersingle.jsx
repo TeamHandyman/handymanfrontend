@@ -137,6 +137,7 @@ function Workersingle (props) {
           <div className="bottom"></div>
       </div>
     </div>
+    </div>
   )
 }
 
