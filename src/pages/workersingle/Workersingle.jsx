@@ -1,4 +1,5 @@
 import "./workersingle.scss";
+import React from "react";
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import Statusbtn from "../../components/changestatus/Statusbtn"
@@ -15,11 +16,35 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link, useParams } from "react-router-dom";
 import {useEffect, useState} from 'react'
 import axios from "axios";
+import Nic from "../../images/nicpic.jpg"
+
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
+// export default function AlertDialog() {
+  
 //Tabs
 
 
 
 function Workersingle (props) {
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  // const [openViewnic, setViewnic] = useState(false)
+
   const {workerId} = useParams();
   const [userData, setuserData] = useState([]);
   useEffect(() => {
@@ -50,7 +75,7 @@ function Workersingle (props) {
               </Stack>
 
               <div className="editButton" >
-                   Change Status
+                  <Statusbtn />
                    {/* <ArrowDropDownIcon /> */}
               </div> 
               
@@ -122,8 +147,45 @@ function Workersingle (props) {
               </div>
 
               <hr className="hrBar"/>
+              <div>
+      <Button style={{color: "#1c1c1c", border:"1px solid #1c1c1c"}} variant="outlined" onClick={handleClickOpen}>
+        View NIC 
+      </Button>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"National Identity Card"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
 
+          {/* NIC CARD IMAGES  */}
+
+          <img src={Nic} alt="" />
+          <img src={Nic} alt="" />
+
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button style={{color: "#1c1c1c", border:"1px solid #1c1c1c"}} onClick={handleClose}>Close</Button>
+          {/* <Button onClick={handleClose} autoFocus>
+            Agree
+          </Button> */}
+        </DialogActions>
+      </Dialog>
+    </div>
+            
+              {/* <div>
+           
+            <button className="viewNic" onClick={()=>setViewnic(true)}> View Nic </button>
+            <Viewnic open={openViewnic} onClose={()=> setViewnic(false)}/> 
+          </div> */}
             </div>
+        
             
            
           </div>
@@ -134,7 +196,9 @@ function Workersingle (props) {
 
             </div>
           </div>
-          <div className="bottom"></div>
+          <div className="bottom">
+               
+          </div>
       </div>
     </div>
     </div>
