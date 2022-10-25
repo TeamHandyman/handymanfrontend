@@ -34,15 +34,16 @@
     
 }
 .tbody{
-    margin-bottom: 10em;
+    margin-bottom: 10%;
 }
 .tb{
     margin-top: 10px;
 
 }
 .td, .td-A, .td-B{
-    margin-bottom: 10%;
+   
     background-color: #ffffff;
+    
 }
 
 

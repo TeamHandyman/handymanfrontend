@@ -35,12 +35,12 @@ const Workerstable = () => {
               
           </thead>
           <tbody className="tb">
-            {data.map((x) => <tr style={{ 'marginLeft': "5rem" }} className="tr" key={x.id}>
+            {data.map((x) => <tr style={{ 'marginLeft': "5rem" }} className="tr" key={x._id}>
               <td className="td">{x.fName}</td>
               <td className="td">{x.lName}</td>
               <td className="td">{x.district}</td>
               
-              <Link to="/workers/1" className="linkStlyes"> 
+              <Link to= { `/workers/customer/${x._id}`}className="linkStlyes"> 
                    <td className="td-A"><Button variant="outlined" color="secondary" size="small">View</Button></td>
               </Link>
               
