@@ -17,9 +17,9 @@ const Ticket = () => {
         <div className="ticketsContainer">
         <Navbar />
         <div className="ticketsWidget">
-        <Ticketswidget type="workers"/>
-        <Ticketswidget type="clients"/>
-        <Ticketswidget type="sales"/>
+          <Ticketswidget type="workers"/>
+          <Ticketswidget type="clients"/>
+          <Ticketswidget type="sales"/>
         {/* <Saleswidget type="tickets"/> */}
         </div>
         
