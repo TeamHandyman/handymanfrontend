@@ -66,7 +66,6 @@ function Workersingle (props) {
   const SelectedOptionChange= (e)=>{
     console.log(e.value)
     axios.put(`http://localhost:1337/api/worker/changeStatus/${workerId}`, {status: e.value}).then(window.location.reload(true))
-    
   }
   return (
     <div className="workerSingle">

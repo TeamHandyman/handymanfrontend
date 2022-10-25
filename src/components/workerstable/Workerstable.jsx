@@ -14,6 +14,7 @@ import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 const Workerstable = () => {
 
   const [data, setData] = useState([]);
+  const [query, setQuery] = useState([]);
   useEffect(() => {
     axios.get('http://localhost:1337/api/worker').then((response)=>{setData(response.data)})
   }, [])
@@ -28,8 +29,8 @@ const Workerstable = () => {
     
   // }
   const options = [
-    { value: 'Accept', label: 'Active' },
-    { value: 'Reject', label: 'Disable' },
+    { value: 'Accept', label: 'Accept' },
+    { value: 'Reject', label: 'Reject' },
     { value: 'pending', label: 'Pending' },
   ]
   
