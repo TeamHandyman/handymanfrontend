@@ -7,6 +7,11 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 
 
 const Featured = () => {
+  const amount = 4*500;
+  const target = 3200;
+  const lastweek = 1300;
+  const lastmonth = 9800;
+  const tp = ((target-amount)/target)*100;
   return (
     <div className="featured">
       <div className="top">
@@ -15,10 +20,10 @@ const Featured = () => {
       </div>
       <div className="bottom">
         <div className="featuredChart">
-            <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
+            <CircularProgressbar value={70} text={tp} strokeWidth={5} />
         </div>
         <p className="title">Total Sales Made Today</p>
-        <p className="amount">Rs.420</p>
+        <p className="amount">Rs.{amount}</p>
         <p className="desc">Previous transactions processing. Last Payment may not be included</p>
 
         <div className="summary">
@@ -26,7 +31,7 @@ const Featured = () => {
             <div className="itemTitle">Target</div>
             <div className="itemResult negative">
                 <KeyboardArrowDownOutlinedIcon fontSize='small' />
-              <div className="resultAmount">Rs.1k</div>
+              <div className="resultAmount">Rs.{target}</div>
             </div>
           </div>
 
@@ -34,7 +39,7 @@ const Featured = () => {
             <div className="itemTitle">Last Week</div>
             <div className="itemResult positive">
                 <KeyboardArrowUpOutlinedIcon fontSize='small' />
-              <div className="resultAmount">Rs.4k</div>
+              <div className="resultAmount">Rs.{lastweek}</div>
             </div>
           </div>
 
@@ -42,7 +47,7 @@ const Featured = () => {
             <div className="itemTitle">Last Month</div>
             <div className="itemResult positive">
                 <KeyboardArrowUpOutlinedIcon fontSize='small' />
-              <div className="resultAmount">Rs3.4k</div>
+              <div className="resultAmount">Rs.{lastmonth}</div>
             </div>
           </div>
 
