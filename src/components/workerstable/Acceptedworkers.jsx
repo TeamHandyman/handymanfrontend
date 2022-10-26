@@ -96,9 +96,7 @@ export default function CustomPaginationActionsTable() {
   const [rows, setRows] = useState([]);
   const [searched, setSearched] = useState("");
   useEffect(() => {
-
     axios.get('http://localhost:1337/api/worker/accepted').then((response)=>{setRows(response.data)})
-
   }, [])
   const options = [
 
