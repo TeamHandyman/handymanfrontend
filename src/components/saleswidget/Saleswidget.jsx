@@ -5,16 +5,25 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import GroupIcon from '@mui/icons-material/Group';
 import StackedLineChartOutlinedIcon from '@mui/icons-material/StackedLineChartOutlined';
 import LocalActivityOutlinedIcon from '@mui/icons-material/LocalActivityOutlined';
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Saleswidgets = ({type}) => {
   let data;
 
   //temp
-  const amount = 2350
+  const [getCount, setGetWCount] = useState([]); 
+  const WorkerC = () => {
+    useEffect(() => {
+      axios.get('http://localhost:1337/api/worker/accepted').then((response)=> {setGetWCount(response.data)})
+    }, []) 
+  }
+  let amount;
   const diff = 20 
 
   switch(type){
     case "workers":
+      WorkerC();
+      amount = getCount.length*50;
       data={
         title:"TOTAL REVENUE",
         isMoney: true,
@@ -22,6 +31,8 @@ const Saleswidgets = ({type}) => {
       };
       break;
     case "clients":
+      WorkerC();
+      amount = getCount.length;
       data={
         title:"DAILY JOB COUNT",
         isMoney: false,
@@ -29,6 +40,8 @@ const Saleswidgets = ({type}) => {
       };
       break;
     case "sales":
+      WorkerC();
+      amount = getCount.length;
       data={
         title:"WEEKLY JOB COUNT",
         isMoney: false,
