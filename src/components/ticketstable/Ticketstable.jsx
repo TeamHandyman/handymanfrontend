@@ -24,6 +24,7 @@ export default function BasicTable() {
     [`&.${tableCellClasses.head}`]: {
       backgroundColor: theme.palette.common.black,
       color: theme.palette.common.white,
+     
     },
     [`&.${tableCellClasses.body}`]: {
       fontSize: 14,
@@ -39,15 +40,15 @@ export default function BasicTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="customized table">
-        <TableHead>
+        <TableHead >
           <TableRow>
-            <StyledTableCell align="right">First Name</StyledTableCell>
-            <StyledTableCell align="right">Last Name</StyledTableCell>
-            <StyledTableCell align="right">Email</StyledTableCell>
-            <StyledTableCell align="right">User Type</StyledTableCell>
-            <StyledTableCell align="right">Status</StyledTableCell>
-            <StyledTableCell align="right">Issue</StyledTableCell>
-            <StyledTableCell align="right">Action</StyledTableCell>
+            <StyledTableCell align="left">First Name</StyledTableCell>
+            <StyledTableCell align="left">Last Name</StyledTableCell>
+            <StyledTableCell align="left">Email</StyledTableCell>
+            <StyledTableCell align="left">User Type</StyledTableCell>
+            <StyledTableCell align="left">Status</StyledTableCell>
+            <StyledTableCell align="left">Issue</StyledTableCell>
+            <StyledTableCell align="left">Action</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -59,12 +60,12 @@ export default function BasicTable() {
               <TableCell component="th" scope="row">
                 {row.fName}
               </TableCell>
-              <TableCell align="right">{row.lName}</TableCell>
-              <TableCell align="right">{row.email}</TableCell>
-              <TableCell align="right">{row.userType}</TableCell>
-              <TableCell align="right">{row.status}</TableCell>
-              <TableCell align="right">{row.issue}</TableCell>
-              <TableCell align="right"><Select
+              <TableCell align="left">{row.lName}</TableCell>
+              <TableCell align="left">{row.email}</TableCell>
+              <TableCell align="left">{row.userType}</TableCell>
+              <TableCell align="left">{row.status}</TableCell>
+              <TableCell align="left">{row.issue}</TableCell>
+              <TableCell align="left"><Select
                     
                     defaultValue={row.status}
                     onChange={(e)=>axios.put(`http://localhost:1337/api/tickets/changeStatus/${row._id}`, {status: e.value}).then(window.location.reload(true))}
