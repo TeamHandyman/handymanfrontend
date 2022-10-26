@@ -10,7 +10,7 @@ const Saleswidgets = ({type}) => {
   let data;
 
   //temp
-  const amount = 100
+  const amount = 2350
   const diff = 20 
 
   switch(type){
@@ -54,12 +54,15 @@ const Saleswidgets = ({type}) => {
     <div className="Saleswidget">
       <div className="left">
           <span className="title ">{data.title}</span>
-          <span className="counter">{data.isMoney && "$"} {amount} </span>
+          <span className="counter">{data.isMoney && "Rs"} {amount} </span>
       </div>
+
+    
+
       <div className="right">
         <div className="percentage positive">
-          <KeyboardArrowUpIcon />
-          {diff}%
+          {/* <KeyboardArrowUpIcon /> */}
+          {/* {diff}% */}
         </div>
         {data.icon}
       </div>

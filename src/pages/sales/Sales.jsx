@@ -16,6 +16,8 @@ const Sales = () => {
     {/* <Sidebar/> */}
         <div className="salesContainer">
         <Navbar />
+        <h2 style={{color: "#1c1c1c", marginLeft:"30px", marginBottom:"10px"}} className="title">Sales Details</h2>
+
         <div className="saleswidgets">
         <Saleswidget type="workers"/>
         <Saleswidget type="clients"/>

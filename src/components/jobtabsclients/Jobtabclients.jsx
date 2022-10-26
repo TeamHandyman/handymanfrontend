@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Ongoing from "../../components/workerprofilecharts/Ongoing"
-import Completed from "../../components/workerprofilecharts/Completed"
+import Ongoingclient from "../../components/clientprofilecharts/Ongoingclient"
+import Completedclient from "../../components/clientprofilecharts/Completedclient"
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -51,16 +51,16 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Ongoing Tasks" {...a11yProps(0)} />
-          <Tab label="Completed Tasks" {...a11yProps(1)} />
+          <Tab label="Ongoing Jobs" {...a11yProps(0)} />
+          <Tab label="Completed Jobs" {...a11yProps(1)} />
           {/* <Tab label="Past Tasks" {...a11yProps(2)} /> */}
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Ongoing />
+        <Ongoingclient />
       </TabPanel>
       <TabPanel value={value} index={1}>
-       < Completed />
+       < Completedclient />
       </TabPanel>
       {/* <TabPanel value={value} index={2}>
         <Past />

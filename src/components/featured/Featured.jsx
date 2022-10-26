@@ -14,6 +14,8 @@ const Featured = () => {
   const tp = ((target-amount)/target)*100;
   return (
     <div className="featured">
+      <br /> <br /> 
+      <br />
       <div className="top">
         {/* <h1 className='title'>Total Revenue</h1> */}
         {/* <MoreVertIcon fontSize="small"/> */}
@@ -24,9 +26,9 @@ const Featured = () => {
         </div>
         <p className="title">Total Sales Made Today</p>
         <p className="amount">Rs.{amount}</p>
-        <p className="desc">Previous transactions processing. Last Payment may not be included</p>
+        <p className="desc">Previous transactions processing. <br /> Last Payment may not be included</p>
 
-        <div className="summary">
+        {/* <div className="summary">
           <div className="item">
             <div className="itemTitle">Target</div>
             <div className="itemResult negative">
@@ -49,11 +51,11 @@ const Featured = () => {
                 <KeyboardArrowUpOutlinedIcon fontSize='small' />
               <div className="resultAmount">Rs.{lastmonth}</div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>
-    </div>
+    // </div>
   )
 }
 

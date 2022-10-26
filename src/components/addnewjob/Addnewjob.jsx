@@ -20,7 +20,7 @@ export default function FormDialog() {
 
   return (
     <div>
-      <Button style={{color: "#1c1c1c", border:"1px solid #1c1c1c", marginTop:"15px", marginLeft: "20px"}} variant="outlined" onClick={handleClickOpen}>
+      <Button style={{color: "#1c1c1c", border:"1px solid #1c1c1c", marginTop:"15px", marginLeft: "30px"}} variant="outlined" onClick={handleClickOpen}>
         Add New Job
       </Button>
       <Dialog open={open} onClose={handleClose}>
