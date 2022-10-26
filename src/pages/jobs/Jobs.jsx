@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Workerstable from "../../components/workerstable/Workerstable"
 import Addnewjob from "../../components/addnewjob/Addnewjob"
 import { Link } from 'react-router-dom';
+import Jobstab from '../../components/jobtable/jobtable'
 
 
 const Jobs = () => {
@@ -23,7 +24,7 @@ const Jobs = () => {
             <Addnewjob  /> 
             <br />
 
-            <Workerstable />
+            <Jobstab />
             
         </div>
         
