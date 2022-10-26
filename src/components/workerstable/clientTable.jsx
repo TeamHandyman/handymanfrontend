@@ -154,7 +154,6 @@ export default function CustomPaginationActionsTable() {
                     <Button variant="outlined" color="success">View</Button>
                 </Link>    
               </TableCell>
-              
             </TableRow>
           ))}
 
