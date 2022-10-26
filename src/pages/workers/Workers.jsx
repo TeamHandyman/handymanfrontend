@@ -1,6 +1,7 @@
 import "./workers.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
+import Workerstabs from "../../components/workerstabs/Workerstabs"
 import Workerstable from "../../components/workerstable/Workerstable"
 
 const Workers = () => {
@@ -10,7 +11,8 @@ const Workers = () => {
       <Sidebar />
         <div className="workersContainer">
         <Navbar />
-        <Workerstable />
+        {/* <Workerstable /> */}
+        <Workerstabs />
     </div>
     
     </div>
