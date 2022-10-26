@@ -21,8 +21,10 @@ const Jobs = () => {
             </Link>  */}
         <h2 style={{color: "#1c1c1c", marginLeft:"25px", marginBottom:"20px"}} className="title">Job Details</h2>
 
-            <Addnewjob  /> 
-            <br />
+
+            <Addnewjob /> <br /><br />
+
+
 
             <Jobstab />
             

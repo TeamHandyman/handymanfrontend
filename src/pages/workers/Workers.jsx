@@ -13,6 +13,7 @@ const Workers = () => {
         <Navbar />
         {/* <Workerstable /> */}
         <h2 style={{color: "#1c1c1c", marginLeft:"35px"}} className="title">Workers Details</h2>
+
         <Workerstabs />
     </div>
     
