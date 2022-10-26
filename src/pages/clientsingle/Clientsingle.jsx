@@ -13,6 +13,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import { useParams } from "react-router-dom";
 import {useEffect, useState} from 'react'
 import axios from "axios";
+// import Jobtabsclients from "../../components/jobtabsclients/Jobtabclients"
 import Jobtabs from "../../components/jobtabs/Jobtabs"
 //Tabs
 
@@ -105,7 +106,7 @@ function Clientsingle(props) {
         </div>
           <div className="right">
             
-            <Jobtabs />
+            <Jobtabsclients />
 
 
           </div>

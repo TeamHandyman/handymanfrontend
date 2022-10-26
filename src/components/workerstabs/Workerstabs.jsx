@@ -51,7 +51,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box style={{color: "#1c1c1c", marginTop:"15px", marginLeft: "20px"}} sx={{ width: '100%' }}>
+    <Box style={{color: "#1c1c1c", marginTop:"15px"}} sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab style={{color: "#1c1c1c", marginLeft: "20px"}} label="Pending Workers" {...a11yProps(0)} />

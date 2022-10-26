@@ -18,8 +18,10 @@ const Jobs = () => {
                 <button className='btn'></button>
             </div>
             </Link>  */}
+        <h2 style={{color: "#1c1c1c", marginLeft:"25px", marginBottom:"20px"}} className="title">Job Details</h2>
 
-            <Addnewjob /> 
+            <Addnewjob  /> 
+            <br />
 
             <Workerstable />
             
