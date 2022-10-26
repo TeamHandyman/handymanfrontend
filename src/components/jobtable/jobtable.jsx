@@ -124,10 +124,12 @@ export default function CustomPaginationActionsTable() {
       <Table sx={{ minWidth: 650 }} aria-label="customized table">
         <TableHead>
           <TableRow>
+
             <StyledTableCell align="left">Job Name</StyledTableCell>
             <StyledTableCell align="left">Job Type</StyledTableCell>
             <StyledTableCell align="left">Description</StyledTableCell>
             <StyledTableCell align="left">Status</StyledTableCell>
+
           </TableRow>
         </TableHead>
         <TableBody>
@@ -148,7 +150,7 @@ export default function CustomPaginationActionsTable() {
               <TableCell style={{ width: 300 }} align="left">
               {row.Status}
               </TableCell>
-              
+
             </TableRow>
           ))}
 

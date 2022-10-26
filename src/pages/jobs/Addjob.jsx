@@ -12,7 +12,7 @@ const Addjob = () => {
             <div className="addjobsContainer">
             <Navbar />
             {/* <Workerstable /> */}
-            <Addjobfom />
+            <Addjobfom style={{marginBottom: "20px"}} />
     </div>
       
     </div>
