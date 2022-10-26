@@ -89,7 +89,7 @@ function Workersingle (props) {
               </Stack>
 
               <div className="editButton" >
-              <Select
+              <Select 
                 defaultValue={selectedOption}
                 onChange={(e)=>SelectedOptionChange(e)}
                 options={options}

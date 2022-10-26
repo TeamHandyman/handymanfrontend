@@ -11,7 +11,7 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
+    <div 
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -51,8 +51,8 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Ongoing Tasks" {...a11yProps(0)} />
-          <Tab label="Completed Tasks" {...a11yProps(1)} />
+          <Tab style={{color: "#1c1c1c"}} label="Ongoing Tasks" {...a11yProps(0)} />
+          <Tab style={{color: "#1c1c1c"}} label="Completed Tasks" {...a11yProps(1)} />
           {/* <Tab label="Past Tasks" {...a11yProps(2)} /> */}
         </Tabs>
       </Box>
