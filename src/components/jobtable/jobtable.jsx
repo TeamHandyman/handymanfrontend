@@ -124,11 +124,10 @@ export default function CustomPaginationActionsTable() {
       <Table sx={{ minWidth: 650 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell align="left">First Name</StyledTableCell>
-            <StyledTableCell align="left">Last Name</StyledTableCell>
-            <StyledTableCell align="left">Email</StyledTableCell>
-            <StyledTableCell align="left">Distict</StyledTableCell>
-            <StyledTableCell align="left">Profile</StyledTableCell>
+            <StyledTableCell align="left">Job Name</StyledTableCell>
+            <StyledTableCell align="left">Job Type</StyledTableCell>
+            <StyledTableCell align="left">Description</StyledTableCell>
+            <StyledTableCell align="left">Status</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -138,22 +137,18 @@ export default function CustomPaginationActionsTable() {
           ).map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row" style={{ width: 300 }}>
-                {row.fName}
+                {row.jobName}
               </TableCell>
               <TableCell style={{ width: 300 }} align="left">
-              {row.lName}
+              {row.jobCategori}
               </TableCell>
               <TableCell style={{ width: 300 }} align="left">
-              {row.email}
+              {row.description}
               </TableCell>
               <TableCell style={{ width: 300 }} align="left">
-              {row.district}
+              {row.Status}
               </TableCell>
-              <TableCell style={{ width: 200 }} align="left">
-                <Link to={ `/workers/customer/${row._id}`} className="linkStlyes" style={{"text-decoration": "none"}}>
-                    <Button variant="outlined" color="success">View</Button>
-                </Link>    
-              </TableCell>
+              
             </TableRow>
           ))}
 
